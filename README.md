@@ -1,29 +1,21 @@
-# social_sachin
+# SocialSachin
+
+## **Sachin is the god of cricket. Is he really?** [Find Out]()
+
+## Libraries used:-
+
+- D3.js
+- Vue.js
+- Vue-router
+
+## Key features:-
+
+- Made it out so the data and facts come out in a story.
+- Wrote the whole css by myself.
 
 ## Project setup
+
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
