@@ -1,18 +1,28 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img width="200px;" alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HelloWorld from "@/components/HelloWorld.vue";
+import sachin from "raw-loader!../assets/sachin.csv";
+import { csvCleaner } from "@/assets/helper.js";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
     HelloWorld
+  },
+  data: function() {
+    return {
+      sachin,
+      sachinJson: []
+    };
+  },
+  created() {
+    this.sachinJson = csvCleaner(sachin);
   }
-}
+};
 </script>
