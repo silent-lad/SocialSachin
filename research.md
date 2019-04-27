@@ -14,4 +14,14 @@ So this doc serves as a todo board,brainstorming area and factual bulletin.
 - Compare and contrast it with other cricketers of that and this era.
   - Giving suitable favour to condition of cricket at that point of time.
 
+## Inpiration links
+
+- https://designmodo.com/data-visualization/
+- http://beta.wind-and-words.com/seasons/2/data
+- https://www.ringba.com/call-tracking/
+- https://blog.evanyou.me/2014/02/11/first-week-of-launching-an-oss-project/
+
 ## Data Points
+
+- sachin.csv [provieded by you]
+-
