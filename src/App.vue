@@ -35,13 +35,14 @@
   </div>
 </template>
 <script>
-import Menu from "@/components/Menu.vue";
-import LineChart from "./components/ChartComponents/LineChart.js";
-import BarChart from "./components/ChartComponents/BarChart.js";
-import RadarChart from "./components/ChartComponents/RadarChart.js";
-import PieChart from "./components/ChartComponents/PieChart.js";
+import {
+  LineChart,
+  BarChart,
+  RadarChart,
+  PieChart
+} from "@/components/ChartComponents";
 export default {
-  components: { Menu, LineChart, BarChart, RadarChart, PieChart },
+  components: { LineChart, BarChart, RadarChart, PieChart },
   data: function() {
     return {
       menuDisplay: false
