@@ -9,7 +9,6 @@ export default {
         labels: ["Running", "Swimming", "Eating", "Cycling"],
         datasets: [
           {
-            label: "Sachin",
             data: [20, 10, 4, 2],
             backgroundColor: [
               "rgba(0, 231, 255, 0.5)",

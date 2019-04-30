@@ -1,20 +1,29 @@
 <template>
   <div class="home">
-    <img
-      class="bg"
-      style="z-index:-3;position:absolute;right:0;top:0;width:100vw;height:100vh;"
-      src="@/assets/sachin.jpg"
-      height="100%"
-      alt=""
-    />
-    <img
-      class="front"
-      style="z-index:-1;position:absolute;right:0;top:0;width:100vw;height:100vh;"
-      src="@/assets/sachin_cut.png"
-      height="100%"
-      alt=""
-    />
-    <h1 class="title heading_section">Sachin Tendulkar</h1>
+    <div class="hero">
+      <img
+        class="bg"
+        style="z-index:-3;position:absolute;right:0;top:0;width:100vw;"
+        src="@/assets/sachin.jpg"
+        height="120%"
+        alt=""
+      />
+      <img
+        class="front"
+        style="z-index:-1;position:absolute;right:0;top:0;width:100vw;"
+        src="@/assets/sachin_cut.png"
+        height="120%"
+        alt=""
+      />
+      <h1 class="title heading_section">Sachin Tendulkar</h1>
+    </div>
+    <div class="content">
+      <h1 class="vs">VS</h1>
+      <router-view />
+      <!-- <div class="container">
+        
+      </div> -->
+    </div>
   </div>
 </template>
 
@@ -37,27 +46,55 @@ export default {
 </script>
 <style>
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
-body {
-  margin: 0;
-  background: grey;
+.vs {
+  text-shadow: 7px 7px 15px black;
+  font-family: "Cinzel", serif;
+  font-size: 8vw;
+  line-height: 40%;
+  color: rgb(216, 12, 12);
 }
-.home {
+@keyframes jump {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.content {
+  position: absolute;
+  top: 120vh;
   width: 100vw;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+img {
+  object-fit: cover;
+  /* object-position: 0 0; */
+}
+
 .heading_section {
   position: absolute;
   left: 0;
   width: 100%;
 }
-.title,
+/* .title,
 .subtitle {
-  font-family: "Acme", sans-serif;
   font-size: 10vw;
   line-height: 40%;
-}
+} */
 .title {
   /* color: #f30a0a; */
+  font-size: 10vw;
+  line-height: 40%;
   color: black;
   opacity: 1;
   font-family: "Cinzel", serif;
@@ -72,11 +109,19 @@ body {
 .home {
   width: 100vw;
   height: 100vh;
-  margin: 0;
+  margin-bottom: 10%;
   padding: 0;
   text-align: center;
 }
 .bg {
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   animation: blur 2s linear;
   filter: blur(1px) grayscale(90%);
 }

@@ -7,9 +7,12 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "chart.js": "^2.8.0",
     "core-js": "^2.6.5",
     "d3": "^5.9.2",
+    "jsdom": "^15.0.0",
+    "tabletojson": "^1.0.4",
     "vue": "^2.6.10",
     "vue-chartjs": "^3.4.2",
     "vue-router": "^3.0.3"

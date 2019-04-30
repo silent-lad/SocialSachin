@@ -12,6 +12,7 @@
 
 ## Key features:-
 
+- Made a unique anmation to lead user through the site like a story book not like conventional nav bar.
 - Wrote the whole css by myself.
 - The data is represented from the csv only which was possible after:-
   - Cleaning the CSV for data representation [Done in `src/assets/helper.js`]

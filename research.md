@@ -19,9 +19,12 @@ So this doc serves as a todo board,brainstorming area and factual bulletin.
 
 - https://www.viratkohli.club/home [For the hero-section]
 - https://smashdelta.com/smartcities [For the dynamic charts representation]
+- https://gigadom.in/2015/07/04/introducing-cricketr-a-r-package-to-analyze-performances-of-cricketers/ [For Sachin career anlysis]
+- https://www.youtube.com/watch?v=5Zg-C8AAIGg
 
 ## Data Points
 
 - sachin.csv [provieded by you]
 - https://www.news18.com/cricketnext/news/sachin-tendulkar-or-virat-kohli-who-is-the-superior-odi-batsman-1920179.html
 - https://www.news18.com/cricketnext/news/stats-reveal-sachin-is-virat-in-odi-knockout-matches-1224080.html
+- https://decisionstats.com/2012/04/07/cricinfo-statsguru-database-for-statistical-and-graphical-analysis/

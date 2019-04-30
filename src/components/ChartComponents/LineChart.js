@@ -8,6 +8,7 @@ export default {
       gradient2: null
     };
   },
+  props: { rawData: Object },
   mounted() {
     this.gradient = this.$refs.canvas
       .getContext("2d")
@@ -58,5 +59,10 @@ export default {
       },
       { responsive: true, maintainAspectRatio: false }
     );
+  },
+  computed: {
+    processedData: function() {
+      this.rawData.datasets.forEach(LineArray => {});
+    }
   }
 };

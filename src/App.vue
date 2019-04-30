@@ -1,79 +1,30 @@
 <template>
   <div id="app">
-    <menu v-if="menuDisplay" />
-    <span v-else>
-      <nav role="navigation">
-        <div id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Info</li></a>
-            <a href="#"><li>Contact</li></a>
-            <a href="https://erikterwan.com/" target="_blank"
-              ><li>Show me more</li></a
-            >
-          </ul>
-        </div>
-      </nav>
-      <router-view />
-      <div class="container">
-        <div class="Chart__list">
-          <div class="Chart">
-            <h2>Linechart</h2>
-            <line-chart></line-chart>
-            <bar-chart></bar-chart>
-            <radar-chart />
-            <pie-chart />
-          </div>
-        </div>
-      </div>
-    </span>
+    <Home></Home>
   </div>
 </template>
 <script>
-import {
-  LineChart,
-  BarChart,
-  RadarChart,
-  PieChart
-} from "@/components/ChartComponents";
+import Home from "@/views/Home.vue";
 export default {
-  components: { LineChart, BarChart, RadarChart, PieChart },
   data: function() {
-    return {
-      menuDisplay: false
-    };
+    return {};
+  },
+  components: {
+    Home
   }
 };
 </script>
 
 
 <style >
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-.Chart {
-  background: #212733;
-  border-radius: 15px;
-  box-shadow: 0px 2px 15px rgba(25, 25, 25, 0.27);
-  margin: 25px 0;
-}
-
-.Chart h2 {
-  margin-top: 0;
-  padding: 15px 0;
-  color: rgba(255, 0, 0, 0.5);
-  border-bottom: 1px solid #323d54;
+body {
+  width: 100vw;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
   padding: 0;
-  background: #232323;
+  background: #383838;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
