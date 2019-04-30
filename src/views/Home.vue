@@ -19,10 +19,9 @@
     </div>
     <div class="content">
       <h1 class="vs">VS</h1>
-      <router-view />
-      <!-- <div class="container">
-        
-      </div> -->
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </div>
   </div>
 </template>
@@ -123,7 +122,7 @@ img {
   );
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   animation: blur 2s linear;
-  filter: blur(1px) grayscale(90%);
+  filter: blur(3px) grayscale(90%);
 }
 .front {
   width: auto;
@@ -160,7 +159,21 @@ img {
     filter: blur(0px) grayscale(0%);
   }
   100% {
-    filter: blur(1px) grayscale(90%);
+    filter: blur(3px) grayscale(90%);
+  }
+}
+.fade-enter-active {
+  animation: fade-enter 0.5s;
+}
+.fade-leave-active {
+  animation: fade-enter 0.5s reverse;
+}
+@keyframes fade-enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 </style>
