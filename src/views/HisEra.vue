@@ -75,7 +75,8 @@ export default {
   background: #141820;
 }
 .era_chart {
-  max-width: 600px;
+  max-width: 55%;
+  height: auto;
   box-shadow: 0px 2px 15px rgba(25, 25, 25, 0.27);
   margin: 5%;
 }
@@ -97,7 +98,7 @@ export default {
 .era_subject_content {
   line-height: 100%;
   color: rgb(192, 192, 192);
-  font-size: 1.5vw;
+  font-size: 20px;
 }
 
 .era_chart h2 {
@@ -146,5 +147,11 @@ i {
   font-size: 8vw;
   line-height: 40%;
   color: rgb(37, 80, 173);
+}
+
+@media screen and (max-width: 786px) {
+  .era_subject_content {
+    font-size: 10px;
+  }
 }
 </style>

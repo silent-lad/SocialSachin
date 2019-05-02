@@ -2,7 +2,7 @@
 
 <img src="./readme_assets/sachin_home.png"></img>
 
-## **Sachin is the god of cricket. Is he really?** [Find Out]()
+## **Sachin is the god of cricket. Is he really?** [Find Out](https://soicalsachin.firebaseapp.com)
 
 ## Libraries used:-
 
