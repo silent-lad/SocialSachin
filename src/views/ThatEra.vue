@@ -8,7 +8,7 @@
     <div class="era_body">
       <div class="era_panel_large">
         <h1 class="era_panel_large_title">
-          Sachin Baap Again
+          Sachin Vs Viv Richards
         </h1>
         <div class="era_panel_large_content">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima non
