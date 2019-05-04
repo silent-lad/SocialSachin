@@ -2,6 +2,12 @@ import { Radar } from "vue-chartjs";
 
 export default {
   extends: Radar,
+  props: {
+    chartdata: {
+      type: Object,
+      default: null
+    }
+  },
   data() {
     return {
       gradient: null,
@@ -9,26 +15,14 @@ export default {
     };
   },
   mounted() {
-    this.renderChart(
-      {
-        labels: ["Running", "Swimming", "Eating", "Cycling"],
-        datasets: [
-          {
-            label: "Sachin",
-            data: [20, 10, 4, 2],
-            backgroundColor: "rgba(0, 231, 255, 0.5)",
-            borderColor: "rgb(0, 231, 255)"
-          },
-          {
-            label: "Virat",
-            data: [10, 0, 40, 20],
-            backgroundColor: "rgba(234, 231, 255, 0.5)",
-            borderColor: "rgb(234, 231, 255)"
-          }
-        ]
-      },
-      { responsive: true, maintainAspectRatio: false }
-    );
+    this.chartdata.datasets[0].backgroundColor = "rgba(0, 231, 255, 0.5)";
+    this.chartdata.datasets[0].borderColor = "rgb(0, 231, 255)";
+    this.chartdata.datasets[1].backgroundColor = "rgba(234, 0, 255, 1)";
+    this.chartdata.datasets[1].borderColor = "rgb(234, 0, 255)";
+    this.renderChart(this.chartdata, {
+      responsive: true,
+      maintainAspectRatio: false
+    });
   }
 };
 

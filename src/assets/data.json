@@ -1,6 +1,70 @@
 {
-  "virat205": {},
-  "sachin205": {},
-  "viratKnockouts": {},
-  "sachinKnockouts": {}
+  "sachinVsKohli205": {
+    "labels": [
+      "Average",
+      "Strike Rate",
+      "Hundreds",
+      "Fifties",
+      "Percentage of Team Runs",
+      "Man of the Match"
+    ],
+    "datasets": [
+      {
+        "label": "Sachin",
+
+        "data": [42.31, 86.52, 21, 43, 17.64, 30]
+      },
+      {
+        "label": "Virat",
+
+        "data": [59, 92.85, 37, 48, 16.93, 30]
+      }
+    ]
+  },
+  "sachinVsKohliNormalised": {
+    "labels": [
+      "Average",
+      "Strike Rate",
+      "Percentage of total Hundreds",
+      "Percentage of team runs"
+    ],
+    "datasets": [
+      {
+        "label": "Sachin",
+        "data": [10.37, 16.53, 7.2, 17.64]
+      },
+      {
+        "label": "Virat",
+        "data": [25.2, 11.16, 5.2, 16.93]
+      }
+    ]
+  },
+  "sachinVsViratRadar": {
+    "labels": [
+      "Strike Rate",
+      "Average",
+      "% Probability of 100",
+      "% Probability of 50",
+      "Strike Rate[India won]",
+      "Highest Runs"
+    ],
+    "datasets": [
+      {
+        "label": "Sachin",
+        "borderColor": "#FC2525",
+        "pointBackgroundColor": "white",
+        "borderWidth": 1,
+        "pointBorderColor": "white",
+        "data": [85, 52.84, 13.4, 27, 200]
+      },
+      {
+        "label": "Virat",
+        "borderColor": "#05CBE1",
+        "pointBackgroundColor": "white",
+        "pointBorderColor": "white",
+        "borderWidth": 1,
+        "data": [74, 24, 0, 7, 58]
+      }
+    ]
+  }
 }

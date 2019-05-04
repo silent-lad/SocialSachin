@@ -85,11 +85,7 @@ img {
   left: 0;
   width: 100%;
 }
-/* .title,
-.subtitle {
-  font-size: 10vw;
-  line-height: 40%;
-} */
+
 .title {
   /* color: #f30a0a; */
   font-size: 10vw;

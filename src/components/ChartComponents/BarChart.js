@@ -14,6 +14,9 @@ export default {
       gradient2: null
     };
   },
+  created() {
+    console.log(this.chartdata);
+  },
   mounted() {
     this.gradient = this.$refs.canvas
       .getContext("2d")
@@ -28,36 +31,11 @@ export default {
     this.gradient2.addColorStop(1, "purple");
     // this.gradient.addColorStop(1, "rgba(100, 10, 20, 0.9)");
     // Overwriting base render method with actual data.
-    this.renderChart(
-      {
-        labels: [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-          "August",
-          "September",
-          "October",
-          "November",
-          "December"
-        ],
-        datasets: [
-          {
-            label: "GitHub Commits",
-            backgroundColor: this.gradient,
-            data: [40, 20, 12, 39, 10, 40, 39, 40, 40, 20, 12, 11]
-          },
-          {
-            label: "GitHub Sex",
-            backgroundColor: this.gradient2,
-            data: [40, 20, 12, 39, 10, 40, 39, 40, 40, 20, 12, 11]
-          }
-        ]
-      },
-      { responsive: true, maintainAspectRatio: false }
-    );
+    this.chartdata.datasets[0].backgroundColor = this.gradient;
+    this.chartdata.datasets[1].backgroundColor = this.gradient2;
+    this.renderChart(this.chartdata, {
+      responsive: true,
+      maintainAspectRatio: false
+    });
   }
 };

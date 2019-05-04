@@ -52,6 +52,16 @@ export default {
 </script>
 
 <style>
+.highlighted {
+  color: aqua;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.highlighted_red {
+  color: cornflowerblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 .era_panel_large_title {
   text-shadow: 7px 7px 15px black;
   font-family: "Cinzel", serif;
