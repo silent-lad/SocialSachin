@@ -22,6 +22,21 @@
       <transition name="fade" mode="out-in">
         <router-view />
       </transition>
+      <div class="front_page">
+        <div class="era_body">
+          <div class="era_panel_large">
+            <h1 class="era_panel_large_title">
+              Sachin Against Ponting
+            </h1>
+            <div class="era_panel_large_content">
+              In the Sachin's era of cricket Ricky Ponting was the second name
+              of batting domination. His aggreive, hard-hitting and dominant
+              gameplay makes him Sachin's perfect contender for that era. Now
+              let's compare these 2 and seek out the answer.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -51,6 +66,9 @@ export default {
   font-size: 8vw;
   line-height: 40%;
   color: rgb(216, 12, 12);
+}
+.front_page {
+  background: ;
 }
 @keyframes jump {
   0% {

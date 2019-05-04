@@ -45,8 +45,7 @@
       "Average",
       "% Probability of 100",
       "% Probability of 50",
-      "Strike Rate[India won]",
-      "Highest Runs"
+      "Strike Rate[India won]"
     ],
     "datasets": [
       {
@@ -64,6 +63,128 @@
         "pointBorderColor": "white",
         "borderWidth": 1,
         "data": [74, 24, 0, 7, 58]
+      }
+    ]
+  },
+  "sachinVsRicky": {
+    "labels": [
+      "Runs x 10",
+      "Highest",
+      "Average",
+      "Strike Rate",
+      "Centuries",
+      "Half Centuries"
+    ],
+    "datasets": [
+      {
+        "label": "Sachin",
+        "data": [343.57, 248, 48.52, 67.58, 100, 164]
+      },
+      {
+        "label": "Ricky",
+        "data": [274.83, 257, 45.95, 68.48, 71, 146]
+      }
+    ]
+  },
+  "sachinVsRickySnipped": {
+    "labels": [
+      "Runs",
+      "Highest",
+      "Average",
+      "Strike Rate",
+      "Centuries",
+      "Half Centuries"
+    ],
+    "datasets": [
+      {
+        "label": "Sachin",
+        "data": [288.04, 248, 49.92, 68.19, 88, 130]
+      },
+      {
+        "label": "Ricky",
+        "data": [274.83, 257, 45.95, 68.48, 71, 146]
+      }
+    ]
+  },
+  "sachinVsRickyTestCaptaincy": {
+    "labels": ["Win", "Loose", "Drawn"],
+    "datasets": [
+      {
+        "data": [48, 16, 7],
+        "backgroundColor": [
+          "rgba(0, 231, 255, 0.5)",
+          "rgba(230, 23, 255, 0.5)",
+          "#647678"
+        ],
+        "borderColor": [
+          "rgba(0, 231, 255, 1)",
+          "rgba(230, 23, 255, 1)",
+          "#5c6b6d"
+        ],
+        "hoverBackgroundColor": [
+          "rgba(0, 231, 255, 1)",
+          "rgba(230, 23, 255, 1)",
+          "#5c6b6d"
+        ]
+      },
+      {
+        "data": [4, 9, 12],
+        "backgroundColor": [
+          "rgba(0, 231, 255, 0.5)",
+          "rgba(230, 23, 255, 0.5)",
+          "#647678"
+        ],
+        "borderColor": [
+          "rgba(0, 231, 255, 1)",
+          "rgba(230, 23, 255, 1)",
+          "#5c6b6d"
+        ],
+        "hoverBackgroundColor": [
+          "rgba(0, 231, 255, 1)",
+          "rgba(230, 23, 255, 1)",
+          "#5c6b6d"
+        ]
+      }
+    ]
+  },
+  "sachinVsRickyODICaptaincy": {
+    "labels": ["Win", "Loose", "Drawn/No Result"],
+    "datasets": [
+      {
+        "data": [164, 51, 20],
+        "backgroundColor": [
+          "rgba(0, 231, 255, 0.5)",
+          "rgba(230, 23, 255, 0.5)",
+          "#647678"
+        ],
+        "borderColor": [
+          "rgba(0, 231, 255, 1)",
+          "rgba(230, 23, 255, 1)",
+          "#5c6b6d"
+        ],
+        "hoverBackgroundColor": [
+          "rgba(0, 231, 255, 1)",
+          "rgba(230, 23, 255, 1)",
+          "#5c6b6d"
+        ]
+      },
+      {
+        "data": [23, 43, 8],
+        "backgroundColor": [
+          "rgba(0, 231, 255, 0.5)",
+          "rgba(230, 23, 255, 0.5)",
+          "#647678"
+        ],
+        "borderColor": [
+          "rgba(0, 231, 255, 1)",
+          "rgba(230, 23, 255, 1)",
+          "#5c6b6d"
+        ],
+        "hoverBackgroundColor": [
+          "rgba(0, 231, 255, 1)",
+          "rgba(230, 23, 255, 1)",
+          "#5c6b6d"
+        ]
       }
     ]
   }

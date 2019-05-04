@@ -8,38 +8,102 @@
     <div class="era_body">
       <div class="era_panel_large">
         <h1 class="era_panel_large_title">
-          Sachin Baap Again
+          Sachin Against Ponting
         </h1>
         <div class="era_panel_large_content">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima non
-          ut suscipit consequatur, unde qui vel quod labore mollitia veniam
-          dignissimos, vero ducimus deserunt quo expedita dolores eos quam
-          provident, libero eum numquam! Ullam saepe, veniam, natus
-          reprehenderit quae odit possimus impedit voluptatem, atque minima ea
-          sint eaque perspiciatis fugiat?
+          In the Sachin's era of cricket Ricky Ponting was the second name of
+          batting domination. His aggreive, hard-hitting and dominant gameplay
+          makes him Sachin's perfect contender for that era. Now let's compare
+          these 2 and seek out the answer.
         </div>
       </div>
-      <div class="era_panel_chart">
+      <div class="era_panel_chart era_panel_large">
         <div class="era_subject">
-          <div class="era_subject_title">Sachin Baap</div>
+          <div class="era_subject_title">At a glance.</div>
           <div class="era_subject_content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima non
-            ut suscipit consequatur, unde qui vel quod labore mollitia veniam
-            dignissimos, vero ducimus deserunt quo expedita dolores eos quam
-            provident, libero eum numquam! Ullam saepe, veniam, natus
-            reprehenderit quae odit possimus impedit voluptatem, atque minima ea
-            sint eaque perspiciatis fugiat?
+            We take a look at Sachin's and Ricky's player stats with the above
+            stated constraints in this bar chart.<br />
+            We see a clear win for Sachin here in terms of almost every
+            parameter we can judge him on.
+            <span class="highlighted_red"
+              >But comparing runs would be slightly unfair to Ponting as he came
+              8 years after Sachin's debut.</span
+            >
           </div>
         </div>
         <div class="era_chart">
-          <line-chart />
+          <bar-chart :chartdata="data.sachinVsRicky" />
         </div>
       </div>
+
+      <div class="era_panel_chart era_panel_large">
+        <div class="era_chart">
+          <bar-chart :chartdata="data.sachinVsRickySnipped" />
+        </div>
+        <div class="era_subject">
+          <div class="era_subject_title">Changing the timeline.</div>
+          <div class="era_subject_content">
+            Let's Just tone down Sachin's stats a little bit. Ponting debuted in
+            1995.<br />
+            <span class="highlighted_red"
+              >So let's show the stats of Sachin's career after 1995.</span
+            >
+            and compare it again with Ponting's career.
+            <span class="highlighted_red"></span>
+          </div>
+        </div>
+      </div>
+      <div class="era_panel_large">
+        <h1 class="era_panel_large_title">
+          Captaincy
+        </h1>
+        <div class="era_panel_large_content">
+          Clearly there is no way Ricky Ponting can catch Sachin's trail.
+          Although there is one more way we can compare them and this time
+          Ponting wins big .Both of them were great cricketers but
+          <span class="highlighted_red">
+            Ponting was far better Captain than Sachin.</span
+          >
+          Let's look at the captaincy stats of both.
+        </div>
+      </div>
+      <div class="era_panel_chart era_panel_large">
+        <div class="era_chart">
+          <pie-chart :chartdata="data.sachinVsRickyODICaptaincy" />
+        </div>
+
+        <div class="era_chart">
+          <pie-chart :chartdata="data.sachinVsRickyTestCaptaincy" />
+        </div>
+      </div>
+
+      <!-- <div class="era_panel_chart era_panel_large">
+        <div class="era_subject">
+          <div class="era_subject_title">The Trophy Winner</div>
+          <div class="era_subject_content">
+            Every batsmen has a major role in letting his team to win titles and
+            trophies. A player's performane in torunaments knockout phases tells
+            us <br />
+            <span class="highlighted_red">how well they handle pressure.</span>
+            Let's take a look at Sachin Vs Virat stats in
+            <span class="highlighted_red">Tournament Knockouts</span>
+          </div>
+        </div>
+        <div class="era_chart">
+          <line-chart :chartdata="data.sachinVsViratRadar" />
+        </div>
+      </div> -->
+    </div>
+    <div class="era_head">
+      <router-link to="/that"><i class="fas fa-angle-left"></i></router-link>
+      <h1 class="era_title">His Era</h1>
+      <router-link to="/this"><i class="fas fa-angle-right"></i></router-link>
     </div>
   </div>
 </template>
 
 <script>
+import data from "@/assets/data.json";
 import {
   LineChart,
   BarChart,
@@ -47,20 +111,28 @@ import {
   PieChart
 } from "@/components/ChartComponents";
 export default {
+  data: function() {
+    return {
+      data
+    };
+  },
   components: { LineChart, BarChart, RadarChart, PieChart }
 };
 </script>
 
 <style>
+/* body {
+  line-height: 30px !important;
+} */
 .highlighted {
   color: aqua;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .highlighted_red {
-  color: cornflowerblue;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-size: fit;
+  background: rgba(0, 16, 235, 0.514);
+  color: rgb(200, 200, 255);
 }
 .era_panel_large_title {
   text-shadow: 7px 7px 15px black;
@@ -71,6 +143,7 @@ export default {
   font-size: 4vw;
   line-height: 100%;
   color: rgb(37, 62, 173);
+  /* color: rgb(190, 190, 190); */
 }
 .era_panel_large_content {
   width: 80%;
@@ -97,7 +170,9 @@ export default {
   margin: 5% 0;
   font-size: 4vw;
   line-height: 100%;
-  color: rgb(173, 37, 82);
+  /* color: rgb(173, 37, 82); */
+  /* color: rgb(37, 62, 173); */
+  color: rgb(175, 35, 35);
 }
 .era_subject {
   text-align: start;
