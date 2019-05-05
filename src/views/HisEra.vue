@@ -69,10 +69,16 @@
       </div>
       <div class="era_panel_chart era_panel_large">
         <div class="era_chart">
+          <h2 class="Chart">ODI</h2>
+          <p>Outer Circle Ricky Ponting as Captain</p>
+          <p>Inner Circle Sachin as Captain</p>
           <pie-chart :chartdata="data.sachinVsRickyODICaptaincy" />
         </div>
 
         <div class="era_chart">
+          <h2 class="Chart">Test</h2>
+          <p>Outer Circle Ricky Ponting as Captain</p>
+          <p>Inner Circle Sachin as Captain</p>
           <pie-chart :chartdata="data.sachinVsRickyTestCaptaincy" />
         </div>
       </div>

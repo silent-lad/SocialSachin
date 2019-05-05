@@ -23,17 +23,12 @@
         <div class="era_subject">
           <div class="era_subject_title">At a glance.</div>
           <div class="era_subject_content">
-            We take a look at Sachin's and Virat's player stats with the above
-            stated constraints in this bar chart.<br />
-            We see a clear win for Virat Kohli here in terms of almost every
-            parameter we can judge him on.
-            <span class="highlighted_red"
-              >Interestingly Sachin still scored more of the team's total. That
-              is a wierd exception..</span
-            >
-            Also, they have won the same number of Man of the Match Awards.
-            Logic would suggest that Kohli should have won many more. But that
-            is not the case.
+            We take a look at Sachin's and Donald's player stats comparing only
+            Test Cricket as Bradman never played ODI<br />
+            <span class="highlighted_red">And the Titan Falls...</span>
+            Their are many factors why Sachin or as a matter of fact any
+            cicketer is nowhere near
+            <span class="highlighted_red">9,9,9,4</span>
           </div>
         </div>
         <div class="era_chart era_panel_large">
@@ -42,21 +37,13 @@
       </div>
       <div class="era_panel_chart era_panel_large">
         <h1 class="era_panel_large_title">
-          Missing out a key factor
+          The Legend...
         </h1>
         <div class="era_panel_large_content">
-          Both of them played in a different era in a different team.
-          <span class="highlighted_red"
-            >Standards of batting have imporoved over the years</span
-          >
-          . For a more honest comparison between Tendulkar and Kohli we need to
-          compare them with the standards of their times.
-          <span class="highlighted_red"
-            >So we will calculate the average for each and every parameter of
-            the top 6 players in Sachin's and Virat's respective era. These will
-            be used to normalise their scores against respective era's
-            standards.</span
-          >
+          It seems to be an impossible feat to achieve what Donald achieved in
+          the field.The legend although is supplemented and or fabricated by
+          many factors let's have a look.
+          <br />
         </div>
       </div>
       <div class="era_panel_chart era_panel_large">
@@ -79,7 +66,7 @@
       </div>
       <div class="era_panel_chart era_panel_large">
         <div class="era_subject">
-          <div class="era_subject_title">The Trophy Winner</div>
+          <div class="era_subject_title">Bradman Vs Bradman</div>
           <div class="era_subject_content">
             Every batsmen has a major role in letting his team to win titles and
             trophies. A player's performane in torunaments knockout phases tells

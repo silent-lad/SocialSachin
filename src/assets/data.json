@@ -187,5 +187,25 @@
         ]
       }
     ]
+  },
+  "sachinVsBradman": {
+    "labels": [
+      "Average",
+      "Strike Rate",
+      "Hundreds",
+      "Fifties",
+      "Percentage of Team Runs",
+      "Man of the Match"
+    ],
+    "datasets": [
+      {
+        "label": "Sachin",
+        "data": [42.31, 86.52, 21, 43, 17.64, 30]
+      },
+      {
+        "label": "Virat",
+        "data": [59, 92.85, 37, 48, 16.93, 30]
+      }
+    ]
   }
 }
