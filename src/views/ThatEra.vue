@@ -25,14 +25,38 @@
           <div class="era_subject_content">
             We take a look at Sachin's and Donald's player stats comparing only
             Test Cricket as Bradman never played ODI<br />
-            <span class="highlighted_red">And the Titan Falls...</span>
-            Their are many factors why Sachin or as a matter of fact any
-            cicketer is nowhere near
-            <span class="highlighted_red">9,9,9,4</span>
+            We see Bradman's the
+            <span class="highlighted_red">99.94</span> average. But we also see
+            Sachin's consistency of form and longevity. Which is something
+            Bradman didn't had to show due to the condition of cricket at that
+            time.
           </div>
         </div>
         <div class="era_chart era_panel_large">
-          <bar-chart :chartdata="data.sachinVsKohli205" />
+          <bar-chart :chartdata="data.sachinVsBradman" />
+        </div>
+      </div>
+      <div class="era_panel_chart era_panel_large">
+        <div class="era_chart">
+          <bar-chart :chartdata="data.sachinVsBradmanLongevity" />
+        </div>
+        <div class="era_subject">
+          <div class="era_subject_title">Sachin's playing conditions</div>
+          <div class="era_subject_content">
+            This reflects some more information. Cricket at that time was an
+            amateur game
+            <span class="highlighted_red"> matches per year were very low</span
+            >. Unlike now, but we can still see that sachin was consistent over
+            his 22 year old career comparing to bradman's 14 year one.<br />
+            <span class="highlighted_red">Bowling</span> if taken into
+            consideration tilts the scale towards Sachin. <br />Also Sachin had
+            to play with
+            <span class="highlighted_red">
+              more number of teams over a very large span of time.</span
+            >
+            There was something or someone new coming up every time. So doing
+            what Sachin did in those conditions is comendable.
+          </div>
         </div>
       </div>
       <div class="era_panel_chart era_panel_large">
@@ -40,31 +64,16 @@
           The Legend...
         </h1>
         <div class="era_panel_large_content">
-          It seems to be an impossible feat to achieve what Donald achieved in
-          the field.The legend although is supplemented and or fabricated by
-          many factors let's have a look.
+          <span class="highlighted_red">Sir Donald Bradman</span>
+          was a exceptional batsman and what he achieve was something even
+          Sachin couldn't. So it was a tie. And we may accept that there can be
+          multiple Gods.
+          <br /><br />
+          <span class="highlighted_red">99.94</span>
           <br />
         </div>
       </div>
-      <div class="era_panel_chart era_panel_large">
-        <div class="era_chart">
-          <bar-chart :chartdata="data.sachinVsKohliNormalised" />
-        </div>
-        <div class="era_subject">
-          <div class="era_subject_title">Changing the scale.</div>
-          <div class="era_subject_content">
-            The story changed when we tak a look at normalised scores.<br />
-            <span class="highlighted_red"
-              >Sachin leads Virat in almost every parameter and considering that
-              Sachin debuted at the age of 16 and Virat was Under-19 captain
-              before his first ODI</span
-            >
-            we can see a look of
-            <span class="highlighted_red">Sachin's Godliness</span> already.
-          </div>
-        </div>
-      </div>
-      <div class="era_panel_chart era_panel_large">
+      <!-- <div class="era_panel_chart era_panel_large">
         <div class="era_subject">
           <div class="era_subject_title">Bradman Vs Bradman</div>
           <div class="era_subject_content">
@@ -79,7 +88,7 @@
         <div class="era_chart">
           <line-chart :chartdata="data.sachinVsViratRadar" />
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="era_head">
       <router-link to="/this"><i class="fas fa-angle-left"></i></router-link>

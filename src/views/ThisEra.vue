@@ -62,6 +62,9 @@
       <div class="era_panel_chart era_panel_large">
         <div class="era_chart">
           <bar-chart :chartdata="data.sachinVsKohliNormalised" />
+          <span class="highlighted_red"
+            >Absolute Score= Real Score - Average Top 6 scores of that era</span
+          >
         </div>
         <div class="era_subject">
           <div class="era_subject_title">Changing the scale.</div>
@@ -74,6 +77,7 @@
             >
             we can see a look of
             <span class="highlighted_red">Sachin's Godliness</span> already.
+            <br /><br />
           </div>
         </div>
       </div>

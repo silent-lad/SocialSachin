@@ -1,9 +1,11 @@
 <template>
   <div class="eraCard">
     <div class="era_head">
-      <router-link to="/that"><i class="fas fa-angle-left"></i></router-link>
-      <h1 class="era_title">His Era</h1>
-      <router-link to="/this"><i class="fas fa-angle-right"></i></router-link>
+      <router-link to="/that"><i class="fas fa-angle-left"></i> </router-link>
+      <h1 class="era_title ">His Era</h1>
+      <router-link to="/this"
+        ><i class="fas fa-angle-right bump"></i
+      ></router-link>
     </div>
     <div class="era_body">
       <div class="era_panel_large">
@@ -69,16 +71,20 @@
       </div>
       <div class="era_panel_chart era_panel_large">
         <div class="era_chart">
-          <h2 class="Chart">ODI</h2>
-          <p>Outer Circle Ricky Ponting as Captain</p>
-          <p>Inner Circle Sachin as Captain</p>
+          <h2 class="era_panel_large_title">ODI</h2>
+          <p class="era_panel_large_content highlighted_red">
+            Outer Circle Ricky Ponting as Captain
+          </p>
+          <p class="era_panel_large_content ">Inner Circle Sachin as Captain</p>
           <pie-chart :chartdata="data.sachinVsRickyODICaptaincy" />
         </div>
 
         <div class="era_chart">
-          <h2 class="Chart">Test</h2>
-          <p>Outer Circle Ricky Ponting as Captain</p>
-          <p>Inner Circle Sachin as Captain</p>
+          <h2 class="era_panel_large_title">Test</h2>
+          <p class="era_panel_large_content highlighted_red">
+            Outer Circle Ricky Ponting as Captain
+          </p>
+          <p class="era_panel_large_content">Inner Circle Sachin as Captain</p>
           <pie-chart :chartdata="data.sachinVsRickyTestCaptaincy" />
         </div>
       </div>
@@ -207,6 +213,7 @@ export default {
 .era_body {
   display: block;
 }
+
 i {
   text-shadow: 7px 7px 15px black;
   font-family: "Cinzel", serif;
@@ -239,7 +246,24 @@ i {
   line-height: 40%;
   color: rgb(37, 80, 173);
 }
-
+.bump {
+  animation: bump 1s infinite;
+  transform: scale(1.2);
+}
+@keyframes bump {
+  0% {
+    color: rgb(245, 130, 130);
+    transform: scale(1.2);
+  }
+  50% {
+    color: white;
+    transform: scale(1);
+  }
+  100% {
+    color: rgb(245, 130, 130);
+    transform: scale(1.2);
+  }
+}
 @media screen and (max-width: 786px) {
   .era_subject_content {
     font-size: 10px;

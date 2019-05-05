@@ -23,8 +23,8 @@
   },
   "sachinVsKohliNormalised": {
     "labels": [
-      "Average",
-      "Strike Rate",
+      "Absolute Average",
+      "Absolute Strike Rate",
       "Percentage of total Hundreds",
       "Percentage of team runs"
     ],
@@ -189,22 +189,35 @@
     ]
   },
   "sachinVsBradman": {
+    "labels": ["Matches", "Runs x 100", "Highest", "Average"],
+    "datasets": [
+      {
+        "label": "Sachin",
+
+        "data": [200, 159.21, 248, 53.78]
+      },
+      {
+        "label": "Bradman",
+        "data": [52, 69.96, 334, 99.94]
+      }
+    ]
+  },
+  "sachinVsBradmanLongevity": {
     "labels": [
-      "Average",
-      "Strike Rate",
-      "Hundreds",
-      "Fifties",
-      "Percentage of Team Runs",
-      "Man of the Match"
+      "Test Matches Per Year",
+      "Matches Per Year Including ODI",
+      "# Teams played against",
+      "% Probability of taking Wicket per Over[Test]",
+      "% Probability of taking Wicket per Over[Test+ODI]"
     ],
     "datasets": [
       {
         "label": "Sachin",
-        "data": [42.31, 86.52, 21, 43, 17.64, 30]
+        "data": [9.0, 30.13, 12, 6.5, 9.7]
       },
       {
-        "label": "Virat",
-        "data": [59, 92.85, 37, 48, 16.93, 30]
+        "label": "Bradman",
+        "data": [3.7, 3.7, 4, 7.6, 7.6]
       }
     ]
   }
