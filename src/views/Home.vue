@@ -103,11 +103,13 @@ img {
   font-family: "Cinzel", serif;
   z-index: -2;
   bottom: 32vh;
-  animation: appear 1s linear;
+  animation: appear 5s linear;
 }
 .subtitle {
   color: #f34c0a;
-  bottom: 0vh;
+  font-family: "Cinzel", serif;
+  line-height: 40%;
+  font-size: 4vw;
 }
 .home {
   width: 100vw;
@@ -125,7 +127,7 @@ img {
     to(rgba(0, 0, 0, 0))
   );
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  animation: blur 2s linear;
+  animation: blur 4s linear;
   filter: blur(3px) grayscale(90%);
 }
 .front {

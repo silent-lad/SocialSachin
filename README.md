@@ -44,16 +44,21 @@ So this doc serves as a todo board,brainstorming area and factual bulletin.
 - http://www.howstat.com/cricket/Statistics/Players/PlayerOverviewSummary.asp?PlayerID=1735
 - https://www.news18.com/cricketnext/news/sachin-tendulkar-or-virat-kohli-who-is-the-superior-odi-batsman-1920179.html
 - https://www.news18.com/cricketnext/news/stats-reveal-sachin-is-virat-in-odi-knockout-matches-1224080.html
+- http://sachinandcritics.com/
 
 ## Key features:-
 
 - Made a unique anmation to lead user through the site like a story book not like conventional nav bar.
 - Wrote the whole css by myself.
+- Navigation is unique. Those arrows are basically Vue-router-links.
+
+  **Compare Sachin Across all eras**.
+  <img src="./readme_assets/navigation.png"></img>
 
 ### Code base Specials:-
 
 - Made chartComponents into a component module by introducing a index.js. So all the charts can be destructured from the chartComponents module within the same export LOC.
-- The hero section comprises of two different mages processed and animated through CSS only.
+- The hero section comprises of two different images processed and animated through CSS only.
 
 ## Project setup
 

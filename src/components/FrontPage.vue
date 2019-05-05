@@ -64,6 +64,8 @@
         long period of time.
       </p>
     </div>
+    <p class="subtitle">The End</p>
+    <img src="@/assets/god.jpg" alt="" class="footer_image" />
   </div>
 </template>
 
@@ -88,6 +90,20 @@ export default {
 </script>
 
 <style>
+.footer_image {
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  filter: grayscale(30%);
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 0, 0, 0.75)),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 .front_page {
   width: 90%;
   margin: 0 auto 5% auto;

@@ -90,28 +90,15 @@
           <pie-chart :chartdata="data.sachinVsRickyTestCaptaincy" />
         </div>
       </div>
-
-      <!-- <div class="era_panel_chart era_panel_large">
-        <div class="era_subject">
-          <div class="era_subject_title">The Trophy Winner</div>
-          <div class="era_subject_content">
-            Every batsmen has a major role in letting his team to win titles and
-            trophies. A player's performane in torunaments knockout phases tells
-            us <br />
-            <span class="highlighted_red">how well they handle pressure.</span>
-            Let's take a look at Sachin Vs Virat stats in
-            <span class="highlighted_red">Tournament Knockouts</span>
-          </div>
-        </div>
-        <div class="era_chart">
-          <line-chart :chartdata="data.sachinVsViratRadar" />
-        </div>
-      </div> -->
     </div>
     <div class="era_head">
       <router-link to="/that"><i class="fas fa-angle-left"></i></router-link>
       <h1 class="era_title">His Era</h1>
-      <router-link to="/this"><i class="fas fa-angle-right"></i></router-link>
+      <router-link to="/this"
+        ><i class="fas fa-angle-right bump tooltip"
+          ><span class="tooltiptext">Change Era</span></i
+        ></router-link
+      >
     </div>
   </div>
 </template>
