@@ -4,9 +4,9 @@
       <div class="era_panel_large">
         <h1
           class="title"
-          style="text-shadow:4px 4px 10px black;color:darkblue;"
+          style="text-shadow:4px 4px 10px black;color: rgb(37, 62, 173);font-size:5vw;"
         >
-          God
+          Greatest Ever
         </h1>
         <div class="era_panel_large_content">
           After the analysis it is safe to say that Sachin is the
@@ -17,9 +17,9 @@
       </div>
       <h1
         class="title"
-        style=" margin-top:15%;text-shadow:4px 4px 10px black;color:white;"
+        style="margin-top:15%;text-shadow:4px 4px 10px black;color: rgb(37, 62, 173);font-size:6vw;"
       >
-        A 100 Centuries.
+        100 Centuries.
       </h1>
       <div class="chart_large">
         <line-chart :chartdata="data.sachin100" />
@@ -38,12 +38,13 @@
         </div>
         <div class="era_chart">
           <pie-chart :chartdata="data.sachin100Nation" />
+          <p>Number of Centuries against each Nation</p>
         </div>
       </div>
 
       <h1
         class="title"
-        style=" margin-top:15%;text-shadow:4px 4px 10px black;color:white;"
+        style=" margin-top:15%;text-shadow:4px 4px 10px black;color: rgb(37, 62, 173);font-size:6vw;"
       >
         Consistency
       </h1>
@@ -112,6 +113,6 @@ export default {
 }
 .chart_large {
   max-width: 100% !important;
-  padding: 2% 7%;
+  padding: 2% 12%;
 }
 </style>

@@ -10,9 +10,9 @@
       >
     </div>
     <div class="era_body">
-      <div class="era_panel_large">
+      <div class="era_panel_large" v-scroll-reveal.reset>
         <h1 class="era_panel_large_title">
-          Sachin Against <span class="highlighted">Ponting</span>
+          Sachin Against Ponting
         </h1>
         <div class="era_panel_large_content">
           In the Sachin's era of cricket Ricky Ponting was the second name of
@@ -21,7 +21,7 @@
           these 2 and seek out the answer.
         </div>
       </div>
-      <div class="era_panel_chart era_panel_large">
+      <div class="era_panel_chart era_panel_large" v-scroll-reveal.reset>
         <div class="era_subject">
           <div class="era_subject_title">At a glance.</div>
           <div class="era_subject_content">
@@ -40,7 +40,7 @@
         </div>
       </div>
 
-      <div class="era_panel_chart era_panel_large">
+      <div class="era_panel_chart era_panel_large" v-scroll-reveal.reset>
         <div class="era_chart">
           <bar-chart :chartdata="data.sachinVsRickySnipped" />
         </div>
@@ -57,7 +57,7 @@
           </div>
         </div>
       </div>
-      <div class="era_panel_large">
+      <div class="era_panel_large" v-scroll-reveal.reset>
         <h1 class="era_panel_large_title">
           Captaincy
         </h1>
@@ -71,7 +71,7 @@
           Let's look at the captaincy stats of both.
         </div>
       </div>
-      <div class="era_panel_chart era_panel_large">
+      <div class="era_panel_chart era_panel_large" v-scroll-reveal.reset>
         <div class="era_chart" style="max-width:42%;">
           <h2 class="era_panel_large_title">ODI</h2>
           <p class="era_panel_large_content highlighted_red">
@@ -156,6 +156,7 @@ export default {
   margin: 0 auto 2% auto;
   font-size: 4vw;
   line-height: 100%;
+  text-decoration: underline;
   color: rgb(37, 62, 173);
   /* color: rgb(190, 190, 190); */
 }
@@ -185,8 +186,8 @@ export default {
   font-size: 4vw;
   line-height: 100%;
   /* color: rgb(173, 37, 82); */
-  /* color: rgb(37, 62, 173); */
-  color: rgb(175, 35, 35);
+  color: rgb(37, 62, 173);
+  /* color: rgb(175, 35, 35); */
 }
 .era_subject {
   text-align: start;
@@ -239,6 +240,7 @@ i {
   width: 90%;
   margin: 0 auto 5% auto;
   background: #191d26;
+  /* background: #25292b; */
   box-shadow: 20px 20px 10px rgba(128, 128, 128, 0.267);
 }
 .era_title {

@@ -6,9 +6,9 @@
       <router-link to="/that"><i class="fas fa-angle-right"></i></router-link>
     </div>
     <div class="era_body">
-      <div class="era_panel_large">
+      <div class="era_panel_large" v-scroll-reveal.reset>
         <h1 class="era_panel_large_title">
-          Sachin Against <span class="highlighted">Kohli</span>
+          Sachin Against Kohli
         </h1>
         <div class="era_panel_large_content">
           In the Present era of cricket Virat Kohli is the perfect contender to
@@ -18,8 +18,9 @@
           of Virat Kohli as doing the contrary might defeat Virat by cheating of
           time shortage.
         </div>
+        <!-- <img src="@/assets/kohli.jpg" alt="" class="intro_image" /> -->
       </div>
-      <div class="era_panel_chart era_panel_large">
+      <div class="era_panel_chart era_panel_large" v-scroll-reveal.reset>
         <div class="era_subject">
           <div class="era_subject_title">At a glance.</div>
           <div class="era_subject_content">
@@ -40,7 +41,7 @@
           <bar-chart :chartdata="data.sachinVsKohli205" />
         </div>
       </div>
-      <div class="era_panel_chart era_panel_large">
+      <div class="era_panel_chart era_panel_large" v-scroll-reveal.reset>
         <h1 class="era_panel_large_title">
           Missing out a key factor
         </h1>
@@ -59,7 +60,7 @@
           >
         </div>
       </div>
-      <div class="era_panel_chart era_panel_large">
+      <div class="era_panel_chart era_panel_large" v-scroll-reveal.reset>
         <div class="era_chart">
           <bar-chart :chartdata="data.sachinVsKohliNormalised" />
           <span class="highlighted_red"
@@ -81,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="era_panel_chart era_panel_large">
+      <div class="era_panel_chart era_panel_large" v-scroll-reveal.reset>
         <div class="era_subject">
           <div class="era_subject_title">The Trophy Winner</div>
           <div class="era_subject_content">
@@ -94,7 +95,7 @@
           </div>
         </div>
         <div class="era_chart">
-          <line-chart :chartdata="data.sachinVsViratRadar" />
+          <bar-chart :chartdata="data.sachinVsViratRadar" />
         </div>
       </div>
     </div>

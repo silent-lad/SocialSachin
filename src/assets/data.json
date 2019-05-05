@@ -8,6 +8,7 @@
       "Percentage of Team Runs",
       "Man of the Match"
     ],
+    "flag": "kohli",
     "datasets": [
       {
         "label": "Sachin",
@@ -28,6 +29,7 @@
       "Percentage of total Hundreds",
       "Percentage of team runs"
     ],
+    "flag": "kohli",
     "datasets": [
       {
         "label": "Sachin",
@@ -47,10 +49,10 @@
       "% Probability of 50",
       "Strike Rate[India won]"
     ],
+    "flag": "kohli",
     "datasets": [
       {
         "label": "Sachin",
-        "borderColor": "#FC2525",
         "pointBackgroundColor": "white",
         "borderWidth": 1,
         "pointBorderColor": "white",
@@ -58,7 +60,6 @@
       },
       {
         "label": "Virat",
-        "borderColor": "#05CBE1",
         "pointBackgroundColor": "white",
         "pointBorderColor": "white",
         "borderWidth": 1,
@@ -75,6 +76,7 @@
       "Centuries",
       "Half Centuries"
     ],
+    "flag": "ponting",
     "datasets": [
       {
         "label": "Sachin",
@@ -95,6 +97,7 @@
       "Centuries",
       "Half Centuries"
     ],
+    "flag": "ponting",
     "datasets": [
       {
         "label": "Sachin",
@@ -108,6 +111,7 @@
   },
   "sachinVsRickyTestCaptaincy": {
     "labels": ["Win", "Loose", "Drawn"],
+    "flag": "ponting",
     "datasets": [
       {
         "data": [48, 16, 7],
@@ -190,6 +194,7 @@
   },
   "sachinVsBradman": {
     "labels": ["Matches", "Runs x 100", "Highest", "Average"],
+
     "datasets": [
       {
         "label": "Sachin",

@@ -1,14 +1,14 @@
 <template>
-  <div class="eraCard bradman">
+  <div class="eraCard">
     <div class="era_head">
       <router-link to="/this"><i class="fas fa-angle-left"></i></router-link>
       <h1 class="era_title">That Era</h1>
       <router-link to="/"><i class="fas fa-angle-right"></i></router-link>
     </div>
     <div class="era_body">
-      <div class="era_panel_large">
+      <div class="era_panel_large" v-scroll-reveal.reset>
         <h1 class="era_panel_large_title">
-          Sachin Against <span class="highlighted">Don Bradman</span>
+          Sachin Against Don Bradman
         </h1>
         <div class="era_panel_large_content">
           The most awaited and the most difficult comparison of this whole
@@ -19,7 +19,7 @@
           Scroll down to find the answers.
         </div>
       </div>
-      <div class="era_panel_chart era_panel_large">
+      <div class="era_panel_chart era_panel_large" v-scroll-reveal.reset>
         <div class="era_subject">
           <div class="era_subject_title">At a glance.</div>
           <div class="era_subject_content">
@@ -36,7 +36,7 @@
           <bar-chart :chartdata="data.sachinVsBradman" />
         </div>
       </div>
-      <div class="era_panel_chart era_panel_large">
+      <div class="era_panel_chart era_panel_large" v-scroll-reveal.reset>
         <div class="era_chart">
           <bar-chart :chartdata="data.sachinVsBradmanLongevity" />
         </div>
@@ -59,7 +59,7 @@
           </div>
         </div>
       </div>
-      <div class="era_panel_chart era_panel_large">
+      <div class="era_panel_chart era_panel_large" v-scroll-reveal.reset>
         <h1 class="era_panel_large_title">
           The Legend...
         </h1>
@@ -117,10 +117,4 @@ export default {
 </script>
 
 <style>
-.bradman > div > div {
-  background: #172542 !important;
-}
-.bradman {
-  background: #161f31 !important;
-}
 </style>
