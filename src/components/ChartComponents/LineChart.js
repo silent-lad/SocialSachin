@@ -28,7 +28,8 @@ export default {
     this.gradient2.addColorStop(0.5, "rgba(0, 231, 255, 0.25)");
     this.gradient2.addColorStop(1, "rgba(0, 231, 255, 0)");
     this.chartdata.datasets[0].backgroundColor = this.gradient;
-    this.chartdata.datasets[1].backgroundColor = this.gradient2;
+    if (this.chartdata.datasets.length > 1)
+      this.chartdata.datasets[1].backgroundColor = this.gradient2;
     this.renderChart(this.chartdata, {
       responsive: true,
       maintainAspectRatio: false

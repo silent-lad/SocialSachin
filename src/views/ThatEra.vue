@@ -1,5 +1,5 @@
 <template>
-  <div class="eraCard">
+  <div class="eraCard bradman">
     <div class="era_head">
       <router-link to="/this"><i class="fas fa-angle-left"></i></router-link>
       <h1 class="era_title">That Era</h1>
@@ -32,7 +32,7 @@
             time.
           </div>
         </div>
-        <div class="era_chart era_panel_large">
+        <div class="era_chart">
           <bar-chart :chartdata="data.sachinVsBradman" />
         </div>
       </div>
@@ -117,4 +117,10 @@ export default {
 </script>
 
 <style>
+.bradman > div > div {
+  background: #172542 !important;
+}
+.bradman {
+  background: #161f31 !important;
+}
 </style>

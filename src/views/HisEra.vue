@@ -70,7 +70,7 @@
         </div>
       </div>
       <div class="era_panel_chart era_panel_large">
-        <div class="era_chart">
+        <div class="era_chart" style="max-width:42%;">
           <h2 class="era_panel_large_title">ODI</h2>
           <p class="era_panel_large_content highlighted_red">
             Outer Circle Ricky Ponting as Captain
@@ -79,7 +79,7 @@
           <pie-chart :chartdata="data.sachinVsRickyODICaptaincy" />
         </div>
 
-        <div class="era_chart">
+        <div class="era_chart" style="max-width:42%;">
           <h2 class="era_panel_large_title">Test</h2>
           <p class="era_panel_large_content highlighted_red">
             Outer Circle Ricky Ponting as Captain
