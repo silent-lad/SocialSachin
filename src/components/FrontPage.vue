@@ -25,7 +25,44 @@
         <line-chart :chartdata="data.sachin100" />
         <p>Number of Centuries Vs year</p>
       </div>
-      <p>Sachin</p>
+      <div class="era_panel_chart era_panel_large">
+        <div class="era_subject">
+          <div class="era_subject_title">100 Ton</div>
+          <div class="era_subject_content">
+            Sachin Tendulkar the only man to achieve the feat of 100 Centuries
+            in the game of Cricket. Every one above compared to him have some
+            characterstics or records which surpass him in one way or
+            another.But no living or dead or even future Cricketer can beat this
+            record of him.
+          </div>
+        </div>
+        <div class="era_chart">
+          <pie-chart :chartdata="data.sachin100Nation" />
+        </div>
+      </div>
+
+      <h1
+        class="title"
+        style=" margin-top:15%;text-shadow:4px 4px 10px black;color:white;"
+      >
+        Consistency
+      </h1>
+      <div class="chart_large">
+        <line-chart :chartdata="data.sachinYearByYear" />
+        <p>Number of Centuries Vs year</p>
+      </div>
+      <p class="era_subject_content" style="padding:0 10% ;">
+        <span class="highlighted_red"
+          >Thirty Four Thousand Three Hundred and Forty Seven</span
+        >
+        . That's the benchmark for longevity, consistency and durability that
+        all batsmen will be measured against, for that's the final tally of runs
+        that Sachin Tendulkar has finished with, in a 24-year journey that has
+        combined flair and natural talent with relentless hard work and
+        single-minded focus. Without either attribute he wouldn't have been able
+        to succeed as much, and as consistently, as he did over an incredibly
+        long period of time.
+      </p>
     </div>
   </div>
 </template>

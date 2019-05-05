@@ -1,16 +1,18 @@
 <template>
-  <div class="eraCard">
+  <div class="eraCard ricky">
     <div class="era_head">
-      <router-link to="/that"><i class="fas fa-angle-left"></i> </router-link>
+      <router-link to="/that"><i class="fas fa-angle-left "> </i> </router-link>
       <h1 class="era_title ">His Era</h1>
       <router-link to="/this"
-        ><i class="fas fa-angle-right bump"></i
-      ></router-link>
+        ><i class="fas fa-angle-right bump tooltip"
+          ><span class="tooltiptext">Change Era</span></i
+        ></router-link
+      >
     </div>
     <div class="era_body">
       <div class="era_panel_large">
         <h1 class="era_panel_large_title">
-          Sachin Against Ponting
+          Sachin Against <span class="highlighted">Ponting</span>
         </h1>
         <div class="era_panel_large_content">
           In the Sachin's era of cricket Ricky Ponting was the second name of
@@ -136,8 +138,21 @@ export default {
 /* body {
   line-height: 30px !important;
 } */
+
+.tooltip .tooltiptext {
+  width: 120px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 20px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
 .highlighted {
-  color: aqua;
+  color: red;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }

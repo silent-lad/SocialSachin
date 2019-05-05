@@ -8,7 +8,7 @@
     <div class="era_body">
       <div class="era_panel_large">
         <h1 class="era_panel_large_title">
-          Sachin Against Don Bradman
+          Sachin Against <span class="highlighted">Don Bradman</span>
         </h1>
         <div class="era_panel_large_content">
           The most awaited and the most difficult comparison of this whole

@@ -41,9 +41,9 @@ So this doc serves as a todo board,brainstorming area and factual bulletin.
 
 - sachin.csv [provieded by you]
 - ESPN cricinfo API [__Saved this whole project__]
+- http://www.howstat.com/cricket/Statistics/Players/PlayerOverviewSummary.asp?PlayerID=1735
 - https://www.news18.com/cricketnext/news/sachin-tendulkar-or-virat-kohli-who-is-the-superior-odi-batsman-1920179.html
 - https://www.news18.com/cricketnext/news/stats-reveal-sachin-is-virat-in-odi-knockout-matches-1224080.html
-- https://decisionstats.com/2012/04/07/cricinfo-statsguru-database-for-statistical-and-graphical-analysis/
 
 ## Key features:-
 

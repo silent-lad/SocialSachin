@@ -221,6 +221,65 @@
       }
     ]
   },
+  "sachin100Nation": {
+    "labels": [
+      "Australia",
+      "Sri Lanka",
+      "South Africa",
+      "England",
+      "New Zealand",
+      "West Indies",
+      "Zimbabwe",
+      "Pakistan",
+      "Bangladesh",
+      "Kenya",
+      "Namibia"
+    ],
+    "datasets": [
+      {
+        "data": [20, 17, 12, 9, 9, 7, 8, 7, 6, 4, 1],
+        "backgroundColor": [
+          "#e6194baa",
+          "#3cb44baa",
+          "#ffe119aa",
+          "#4363d8aa",
+          "#f58231aa",
+          "#911eb4aa",
+          "#46f0f0aa",
+          "#f032e6aa",
+          "#bcf60caa",
+          "#fabebeaa",
+          "#008080aa"
+        ],
+        "borderColor": [
+          "#e6194b",
+          "#3cb44b",
+          "#ffe119",
+          "#4363d8",
+          "#f58231",
+          "#911eb4",
+          "#46f0f0",
+          "#f032e6",
+          "#bcf60c",
+          "#fabebe",
+          "#008080"
+        ],
+        "hoverBackgroundColor": [
+          "#e6194b",
+          "#3cb44b",
+          "#ffe119",
+          "#4363d8",
+          "#f58231",
+          "#911eb4",
+          "#46f0f0",
+          "#f032e6",
+          "#bcf60c",
+          "#fabebe",
+          "#008080"
+        ]
+      }
+    ]
+  },
   "sachin100": {
     "labels": [
       1990,
@@ -277,6 +336,102 @@
           8,
           3,
           1
+        ]
+      }
+    ]
+  },
+  "sachinYearByYear": {
+    "labels": [
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013
+    ],
+    "datasets": [
+      {
+        "label": "Average",
+        "borderColor": "#FC2525",
+        "pointBackgroundColor": "#FC2525",
+        "borderWidth": 1,
+        "pointBorderColor": "#FC2525",
+        "data": [
+          0,
+          23,
+          34,
+          39,
+          24,
+          47,
+          40,
+          53,
+          30,
+          65,
+          42,
+          39,
+          69,
+          52,
+          57,
+          40,
+          27,
+          44,
+          47,
+          41,
+          54,
+          204,
+          46,
+          31.5
+        ]
+      },
+      {
+        "label": "Strike Rate",
+        "borderColor": "#05CBE1",
+        "pointBackgroundColor": "white",
+        "borderWidth": 1,
+        "pointBorderColor": "white",
+        "data": [
+          0,
+          98,
+          74,
+          69,
+          73,
+          88,
+          101,
+          82,
+          84,
+          102,
+          88,
+          81,
+          91,
+          87,
+          87,
+          80,
+          77,
+          77,
+          85,
+          84,
+          94,
+          134,
+          88,
+          81
         ]
       }
     ]

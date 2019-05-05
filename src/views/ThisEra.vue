@@ -8,7 +8,7 @@
     <div class="era_body">
       <div class="era_panel_large">
         <h1 class="era_panel_large_title">
-          Sachin Against Kohli
+          Sachin Against <span class="highlighted">Kohli</span>
         </h1>
         <div class="era_panel_large_content">
           In the Present era of cricket Virat Kohli is the perfect contender to
