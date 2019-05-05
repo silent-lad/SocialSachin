@@ -127,13 +127,13 @@ export default {
 } */
 
 .tooltip .tooltiptext {
-  width: 120px;
+  width: 6vw;
   background-color: rgb(0, 0, 0);
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-  font-size: 20px;
+  font-size: 1.4vw;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
@@ -269,6 +269,12 @@ i {
 @media screen and (max-width: 786px) {
   .era_subject_content {
     font-size: 10px;
+  }
+  .title.heading_section {
+    z-index: 999;
+    font-size: 10vw;
+    line-height: 100%;
+    background: rgba(255, 0, 0, 0.5);
   }
 }
 </style>

@@ -93,9 +93,14 @@ img {
   left: 0;
   width: 100%;
 }
+/* .heading_section.title {
+  background: rgba(255, 0, 0, 0.5);
+  line-height: 90%;
+} */
 
 .title {
   /* color: #f30a0a; */
+
   font-size: 10vw;
   line-height: 40%;
   color: black;
@@ -132,7 +137,7 @@ img {
 }
 .front {
   width: auto;
-  animation: scaleUp 2s linear;
+  animation: scaleUp 4s linear;
   transform: scale(1.02);
 }
 @keyframes appear {

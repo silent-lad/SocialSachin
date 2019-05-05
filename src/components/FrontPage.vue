@@ -49,7 +49,7 @@
       </h1>
       <div class="chart_large">
         <line-chart :chartdata="data.sachinYearByYear" />
-        <p>Number of Centuries Vs year</p>
+        <p>Performance Over Years</p>
       </div>
       <p class="era_subject_content" style="padding:0 10% ;">
         <span class="highlighted_red"
