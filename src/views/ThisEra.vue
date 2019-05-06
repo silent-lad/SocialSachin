@@ -1,6 +1,6 @@
 <template>
   <div class="eraCard">
-    <div class="era_head">
+    <div class="era_head" id="eraCard">
       <router-link to="/"><i class="fas fa-angle-left"></i></router-link>
       <h1 class="era_title">This Era</h1>
       <router-link to="/that"><i class="fas fa-angle-right"></i></router-link>
@@ -120,6 +120,11 @@ export default {
     return {
       data
     };
+  },
+  mounted() {
+    document.getElementById("eraCard").scrollIntoView({
+      behavior: "smooth"
+    });
   },
   components: { LineChart, BarChart, RadarChart, PieChart }
 };

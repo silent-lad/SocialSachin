@@ -45,6 +45,19 @@ export default {
   },
   created() {
     this.sachinJson = csvCleaner(sachin);
+  },
+  methods: {
+    scrollUp() {
+      // window.scroll(100, 0);
+      console.log(document.getElementById("eraCard"));
+    }
+  },
+  watch: {
+    $route: function(to, from) {
+      this.scrollUp();
+      console.log("To :", to.path); // current route
+      console.log("To :", from.path); // old route
+    }
   }
 };
 </script>
