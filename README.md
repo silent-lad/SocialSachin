@@ -53,7 +53,6 @@ So this doc serves as a todo board,brainstorming area and factual bulletin.
 
 ## Data Points
 
-- sachin.csv [provieded by you]
 - ESPN cricinfo API [__Saved this whole project__]
 - http://www.howstat.com/cricket/Statistics/Players/PlayerOverviewSummary.asp?PlayerID=1735
 - https://www.news18.com/cricketnext/news/sachin-tendulkar-or-virat-kohli-who-is-the-superior-odi-batsman-1920179.html
